@@ -9,28 +9,51 @@ html{
   scroll-behavior: smooth;
 }
 .navbar{
-  background: linear-gradient(to right, #516BC8, #2B47AE);
+  background: #330867;
   padding: 0 !important;
   position: sticky;
   top: 0;
   z-index: 10;
 }
-.navbar-brand h2{
-  height: 50px;
-  padding-left: 17px;
-  color: #fff;
-  font-size: 25px;
+.navbar-brand{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: center; 
+  justify-content: flex-start;
+}
+.navbar-brand h2{
+  height: 40px;
+  padding-left: 10px;
+  color: #eee;
+  font-size: 25px;
+  padding-top: 11px;
+}
+.nav-link, .nav-item{
+  color: #fff !important
+}
+.navbar-toggler{
+  outline: none;
+}
+.logo{
+  width: 40px;
+  height: 40px;
 }
 #banner{
-  background: linear-gradient(to right, #516BC8, #2B47AE);
+ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   color: #fff;
-  padding: 5%;
 }
 .title h1{
   font-size: 40px;
   font-weight: 600;
   margin-top: 100px; 
+}
+#banner .container{
+  padding-top: 5%;
+}
+.btn-white{
+  box-shadow: none; 
+  padding: 8px 25px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right, #516BC8, #2B47AE);
+  color: #fff;
 }
