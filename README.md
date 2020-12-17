@@ -1,1 +1,1 @@
-# Wavy
+This shouldn't be a public repository 😬
