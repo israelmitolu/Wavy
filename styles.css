@@ -19,6 +19,7 @@ html{
   display: flex;
   align-items: center; 
   justify-content: flex-start;
+  flex: 1;
 }
 .navbar-brand h2{
   height: 40px;
@@ -29,6 +30,9 @@ html{
 }
 .nav-link, .nav-item{
   color: #fff !important
+}
+.nav-link a:hover{
+  color: yellow;
 }
 .navbar-toggler{
   outline: none;
@@ -48,6 +52,7 @@ html{
 }
 #banner .container{
   padding-top: 5%;
+  display: flex;
 }
 .btn-white{
   box-shadow: none; 
@@ -56,4 +61,17 @@ html{
   border-radius: 25px;
   background: linear-gradient(to right, #516BC8, #2B47AE);
   color: #fff;
+}
+.button-group{
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  height:60px;
+}
+.button-group button{
+  border-radius: 10%;
+}
+.navbar-nav{
+  flex: 2;
+  justify-content: space-around;
 }
