@@ -14,7 +14,7 @@ body{
   top: 0;
   z-index: 10;
   background: #fff;
-  color: #111;
+  color: #37474f;
 }
 navbar {
     padding-top: 1.2rem;
@@ -39,7 +39,7 @@ navbar {
 .navbar-brand h2{
   height: 40px;
   padding-left: 10px;
-  color: #111;
+  color: #37474f;
   font-size: 25px;
   padding-top: 11px;
 }
@@ -79,7 +79,6 @@ navbar {
 }
 #about{
   background: #fcfcfc;
-  color: #;
 }
 
 .section-title {
@@ -87,31 +86,62 @@ navbar {
 }
 
 h2.section-title-heading {
-    color: #111;
+    color: #37474f;
     padding-top: 2rem;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.8rem;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .section-title::after {
     content: '';
     position: absolute;
     border-bottom: 2px solid rgba(0,172,217, 0.62);
-    width: 40%;
-    top: 70px;
-    left: 20px;
+    width: 5%;
+    top: 65px;
+    left: 16px;
 }
 
 .section-title:hover::after {
-    width: 3%;
-    transition: all 0.6s ease-out;
-    -webkit-transition: all 0.6s ease-out;
-    -moz-transition: all 0.6s ease-out;
-    -o-transition: all 0.6s ease-out;
+    width: 50%;
+    transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
 }
 .fas{
   color: #FFC600;
+}
+#features {
+    background-color: #fafafa;
+    padding-bottom: 6rem;
+    margin-top: 3rem;
+}
+
+#features img {
+    display: block;
+    margin: 0 auto;
+}
+
+#features .feature-block {
+    text-align: center;
+}
+
+#features .feature-block h3 {
+    color: #37474f;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#features .feature-block img {
+    padding-bottom: 1rem;
+}
+
+#features .feature-block p {
+    color: #495057;
+    font-size: 1rem;
+    line-height: 1.7rem;
 }
 @media (max-width: 992px) {
 
@@ -119,13 +149,8 @@ h2.section-title-heading {
         background: rgba(0,172,217,1);
         padding-left: 1rem;
     }
-    h2, h3, h4, p{
+    p{
       font-size: 1rem;
     }
 
 }
-  .menuToggle{
-    position: relative;
-    width: 40px;
-    cursor: pointer;
-  }
