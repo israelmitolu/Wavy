@@ -9,8 +9,42 @@ body{
   scroll-behavior: smooth;
   min-height: 100vh;
 }
-.navbar{
-  padding: 0!important;
+/* for waves */
+.custom-shape-divider-bottom-1609258123 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1609258123 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1609258123 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1609258123 svg {
+        width: calc(182% + 1.3px);
+        height: 153px;
+    }
+}
+.overlay{
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  left: 0;
+  right: 0;
 }
 .navbar-brand{
   display: flex;
@@ -21,31 +55,59 @@ body{
 .navbar-brand h2{
   height: 40px;
   padding-left: 10px;
-  color: #37474f;
   font-size: 25px;
   padding-top: 11px;
+  color: rgba(252, 74, 26, 0.9);
 }
 .nav-link:hover{
   color: yellow;
+}
+.navbar {
+    padding: 0!important;
+    background: #fafafa;
+}
+.nav-link {
+    color: #1F9155;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .85rem;
+}
+.navbar.active {
+    background-color: rgba(0,172,217, 0.7);
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.1);
 }
 .logo{
   width: 40px;
   height: 40px;
 }
 #banner{
-    background-image: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52)), url('assets/pexels-lukas-577210.jpg');
-    background-size: cover;
+    background: linear-gradient(rgba(252, 74, 26, 0.9), rgba(247, 183, 51, 0.9));
+    background-size: cover; 
     background-repeat: no-repeat;
-    padding-top: 8rem;
+    padding-top: 7rem;
     padding-bottom: 6rem;
     position: relative;
     color: #fff;
     height: 100%
 }
-
-.hero{
-  z-index: 1000;
-  
+.cover {
+	max-width: 100%;
+	z-index: 1000;
+	align-self: flex-end;
+}
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateX(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+.cover img {
+	filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.5s ease;
 }
 .title h2{
   font-size: 30px;
@@ -66,6 +128,7 @@ body{
     padding-top: 2rem;
     font-weight: 500;
     font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .section-title::after {
@@ -96,15 +159,139 @@ body{
 }
 .feature-img{
   background: pink;
+  padding-bottom: 10px;
 }
+#pricing {
+    padding-bottom: 7rem;
+    position: relative;
+}
+
+#pricing::before {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 20%;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+    top: -6rem;
+    right: 0;
+    left: 0;
+}
+
+#pricing .section-title {
+    margin-bottom: 5rem;
+}
+
+#pricing .pricing-table {
+    background-color: #ffffff;
+    box-shadow: -1px 0px 12px 4px rgba(0,0,0, 0.24);
+    -webkit-box-shadow: -1px 0px 12px 4px rgba(0,0,0, 0.24);
+    -moz-box-shadow: -1px 0px 12px 4px rgba(0,0,0, 0.24);
+    -o-box-shadow: -1px 0px 12px 4px rgba(0,0,0, 0.24);
+    margin-right: 1rem;
+    width: calc(90% / 3);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#pricing .pricing-table .table-header h4 {
+    color: var(--section-title-color-dark);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#pricing .pricing-table .table-content {
+    margin-top: 2rem;
+}
+
+#pricing .pricing-table .table-content ul li {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+#pricing .pricing-table .table-footer {
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+#pricing .pricing-table .table-footer a {
+    background: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52));
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#pricing .pricing-table .table-footer a:hover {
+    text-decoration: none;
+    background: #ffffff;
+    color: rgba(0,172,217, 0.62);
+    border: 2px solid rgba(0,172,217, 0.62);
+}
+
+#pricing .table-header {
+    margin: 0;
+    width: 100%;
+}
+
+#pricing .pricing-table .table-header {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#pricing .pricing-table:nth-child(2) .table-header {
+    background: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52));
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: #ffffff;
+    position: relative;
+}
+
+#pricing .pricing-table:nth-child(2) .table-header img {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+#pricing .pricing-table:nth-child(2) .table-header h4 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+/********* Responsive CSS *********/
+
+
 @media (max-width: 992px) {
 
-    .navbar-collapse {
-        background: transparent;
-        justify-self: flex-end;
+    .navbar-collapse{
+      padding-left: 1rem;
     }
     p{
       font-size: 1rem;
+    }
+    #pricing .pricing-table {
+        width: calc(80% / 1);
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #pricing .pricing-table:nth-child(1) {
+        margin-top: -2rem;
     }
 
 }
