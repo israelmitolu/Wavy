@@ -21,7 +21,7 @@
 	    	<button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    	</button>
-	    	<div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarNav">
+	    	<div class="collapse navbar-collapse justify-content-center ml-auto" id="navbarNav">
 		      <ul class="navbar-nav">
 		        <li class="nav-item">
 		          <a class="nav-link active" href="#banner">Home</a>
@@ -38,9 +38,12 @@
 		        <li class="nav-item">
 		          <a class="nav-link" href="#contact">Contact</a>
 		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="http://jomail.herokuapp.com/login" target="_blank">Login
+		          </a>
+		        </li>
 		      </ul>
-		      <a class="nav-link" href="http://jomail.herokuapp.com/login" target="_blank"><button type="button" class="btn btn-success">Login</button>
-		      </a>
+		      
 	    	</div>
 	    	
 	     
@@ -58,7 +61,9 @@
 	    <div class="row">
 	      <div class="col-md-5 title">
 					<h2>The email marketing platform that helps you work <b>smarter</b>, not <b>harder</b>.</h2>
-					<a href=http://jomail.herokuapp.com/login" target="_blank"class="btn btn-ouline-primary btn-warning">Get Started</a>
+					<div class="cta">
+						<button class="cta-get">Add To Cart</button>
+					</div>
 	      </div>
 	      <div class="col-md-7 cover">
 	        <img class="img-fluid hero" src="assets/hero.png">
@@ -152,41 +157,37 @@
     <section id="pricing">
 
         <div class="container">
-
             <div class="row section-title justify-content-center">
-                <h2 class="section-title-heading">pricing plans</h2>
+                <h2 class="section-title-heading">Pricing plans</h2>
             </div>
 
-            <div class="row justify-content-center">
+         <div class="row justify-content-center">
+            <div class="col-md pricing-card">
 
-                <div class="col-md pricing-table">
+              <div class="table-header text-center">
+                   <h4>BASIC</h4>
+                   <p>$6.55/month</p>
+              </div>
+              <div class="table-content">
+               <ul>
+                <li>free support</li>
+                <li>20gb storage</li>
+                <li>2 users</li>
+                <li>15 email templates</li>
+               </ul>
+               </div>
 
-                    <div class="table-header text-center">
-                        <h4>basic</h4>
-                        <p>$25/month</p>
-                    </div>
-
-                    <div class="table-content">
-                        <ul>
-                            <li>free support</li>
-                            <li>20gb storage</li>
-                            <li>2 users</li>
-                            <li>2 email accounts</li>
-                        </ul>
-                    </div>
-
-                    <div class="table-footer text-center">
+               <div class="table-footer text-center">
                         <a href="#">order now</a>
                     </div>
 
                 </div>
 
-                <div class="col-md pricing-table">
+                <div class="col-md pricing-card">
 
                     <div class="table-header text-center">
-                        <h4>medium</h4>
+                        <h4>PROFESSIONAL</h4>
                         <p>$45/month</p>
-                        <img src="assets/img/sale-badge.png" alt="">
                     </div>
 
                     <div class="table-content">
@@ -204,10 +205,10 @@
 
                 </div>
 
-                <div class="col-md pricing-table">
+                <div class="col-md pricing-card">
 
                     <div class="table-header text-center">
-                        <h4>large</h4>
+                        <h4>MAX</h4>
                         <p>$125/month</p>
                     </div>
 
@@ -231,10 +232,31 @@
         </div>
 
     </section> 
+    
+  <!-- Footer section -->
+    <footer id="footer">
 
-  
-  
-  <!------------> 
+        <div class="container">
+
+            <div class="row d-flex flex-column align-items-center">
+
+                <a class="footer-logo" href="#banner"><img src="assets/favicon.svg" class="logo"><h2>Jomail</h2></a>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="copyright text-center">
+                    <p>Copyright 2020</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
   
   <!---------------->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>

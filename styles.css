@@ -76,6 +76,19 @@ body{
     background-color: rgba(0,172,217, 0.7);
     box-shadow: 1px 2px 10px rgba(0,0,0,0.1);
 }
+.cta {
+	padding: 50px 0px 0px 0px;
+}
+.cta-get {
+	background: #FFFFFF;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	color: #111;
+	margin: 17px 0px 0px 10px;
+}
 .logo{
   width: 40px;
   height: 40px;
@@ -117,6 +130,7 @@ body{
 }
 #about{
   background: #fcfcfc;
+  background: #fff;
 }
 
 .section-title {
@@ -169,12 +183,12 @@ body{
 #pricing::before {
     content: '';
     position: absolute;
-    background-color: #ffffff;
+    background-color: #eee;
     width: 100%;
-    height: 20%;
+    height: 10%;
     transform: skewY(-2deg);
     transform-origin: top right;
-    top: -6rem;
+    top: -6.8rem;
     right: 0;
     left: 0;
 }
@@ -183,7 +197,7 @@ body{
     margin-bottom: 5rem;
 }
 
-#pricing .pricing-table {
+#pricing .pricing-card {
     background-color: #ffffff;
     box-shadow: -1px 0px 12px 4px rgba(0,0,0, 0.24);
     -webkit-box-shadow: -1px 0px 12px 4px rgba(0,0,0, 0.24);
@@ -195,38 +209,38 @@ body{
     padding-right: 0;
 }
 
-#pricing .pricing-table .table-header h4 {
-    color: var(--section-title-color-dark);
+#pricing .pricing-card .table-header h4 {
+    color: #2E2F36;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-#pricing .pricing-table .table-content {
+#pricing .pricing-card .table-content {
     margin-top: 2rem;
 }
 
-#pricing .pricing-table .table-content ul li {
+#pricing .pricing-card .table-content ul li {
     list-style: none;
     text-align: center;
     padding-bottom: 1rem;
     font-weight: 600;
 }
 
-#pricing .pricing-table .table-footer {
+#pricing .pricing-card .table-footer {
     margin-top: 2rem;
     padding-bottom: 3rem;
 }
 
-#pricing .pricing-table .table-footer a {
-    background: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52));
-    padding: .8rem 2rem;
+#pricing .pricing-card .table-footer a {
+    background: linear-gradient(to right, rgba(252, 74, 26, 0.9), rgba(247, 183, 51, 0.9));
+    padding: .5rem 1rem;
     border-radius: 2rem;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-#pricing .pricing-table .table-footer a:hover {
+#pricing .pricing-card .table-footer a:hover {
     text-decoration: none;
     background: #ffffff;
     color: rgba(0,172,217, 0.62);
@@ -238,33 +252,73 @@ body{
     width: 100%;
 }
 
-#pricing .pricing-table .table-header {
+#pricing .pricing-card .table-header {
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
-#pricing .pricing-table:nth-child(2) .table-header {
-    background: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52));
+#pricing .pricing-card:nth-child(2) .table-header {
+    background: linear-gradient(rgba(252, 74, 26, 0.9), rgba(247, 183, 51, 0.9));
     padding-top: 3rem;
     padding-bottom: 2rem;
     color: #ffffff;
     position: relative;
 }
 
-#pricing .pricing-table:nth-child(2) .table-header img {
+#pricing .pricing-card:nth-child(2) .table-header img {
     position: absolute;
-    left: 5px;
+    left: 2px;
     top: 5px;
 }
 
-#pricing .pricing-table:nth-child(2) .table-header h4 {
+#pricing .pricing-card:nth-child(2) .table-header h4 {
     color: #ffffff;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 600;
 }
+#footer {
+    background-color: #2b323f;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+/*
+#footer::before {
+    content: '';
+    position: absolute;
+    background-color: #2b323f;
+    width: 100%;
+    height: 45%;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+    top: -5.5rem;
+    right: 0;
+    left: 0;
+}
+*/
+#footer .social-icons {
+    margin-top: -1rem;
+}
 
+#footer .social-icons a {
+    margin-right: 10px;
+    color: #8d8c8c;
+}
 
+.copyright p {
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: .9rem;
+}
+.footer-logo{
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
 
 
 
@@ -275,22 +329,27 @@ body{
 /********* Responsive CSS *********/
 
 
-@media (max-width: 992px) {
+@media (max-width: 782px) {
 
     .navbar-collapse{
       padding-left: 1rem;
+      height: 100%;
+    }
+    .nav-link{
+      background: #eee;
+      padding-left: 8rem;
     }
     p{
       font-size: 1rem;
     }
-    #pricing .pricing-table {
-        width: calc(80% / 1);
+    #pricing .pricing-card {
+        width: calc(70% / 1);
         margin-top: 2rem;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #pricing .pricing-table:nth-child(1) {
+    #pricing .pricing-card:nth-child(1) {
         margin-top: -2rem;
     }
 
