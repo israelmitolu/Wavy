@@ -195,7 +195,7 @@ body{
 }
 
 #pricing .section-title {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 #pricing .pricing-card {
@@ -224,8 +224,9 @@ body{
 #pricing .pricing-card .table-content ul li {
     list-style: none;
     text-align: center;
+    justify-content: center;
     padding-bottom: 1rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 #pricing .pricing-card .table-footer {
@@ -266,12 +267,6 @@ body{
     position: relative;
 }
 
-#pricing .pricing-card:nth-child(2) .table-header img {
-    position: absolute;
-    left: 2px;
-    top: 5px;
-}
-
 #pricing .pricing-card:nth-child(2) .table-header h4 {
     color: #ffffff;
     font-size: 1.5rem;
@@ -280,8 +275,8 @@ body{
 }
 #footer {
     background-color: #2b323f;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-top: .5rem;
+    padding-bottom: 1.2rem;
     position: relative;
 }
 /*
@@ -300,6 +295,7 @@ body{
 */
 #footer .social-icons {
     margin-top: -1rem;
+    justify-content: flex-end;
 }
 
 #footer .social-icons a {
