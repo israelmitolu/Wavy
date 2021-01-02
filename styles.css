@@ -80,13 +80,13 @@ body{
 	padding: 0px!important;
 }
 .cta-get {
-	background: #FFEBDE;
+	background: #42445A;
 	width: 120px;
 	height: 40px;
 	cursor: pointer;
 	font-size: 14px;
 	border: none;
-	color: #111;
+	color: #fff;
 	margin: 30px 0px 0px 30px;
 	border-radius: 10px;
 }
@@ -123,11 +123,12 @@ body{
 	filter: drop-shadow(0px 5px 3px black);
 	animation: drop 1.5s ease;
 }
-.title h2{
-  font-size: 30px;
+.title{
+  font-size: 1.9rem;
   font-weight: 400;
-  margin-top: 100px; 
-  padding-bottom: 20px;
+  margin-top: 6rem; 
+  padding-bottom: 2rem;
+  padding-left: 2rem;
 }
 #about{
   background: #fcfcfc;
@@ -172,6 +173,11 @@ body{
     background-color: #fafafa;
     padding-bottom: 6rem;
     margin-top: 3rem;
+}
+.features-card{
+  align-items: center;
+  justify-content: space-between; 
+  margin: 2rem 0rem;
 }
 .feature-img{
   background: #eee;
@@ -338,12 +344,13 @@ body{
 }
 
 .btn-contact {
-    background: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52));
+    background: #42445A;
     padding: .5rem 2.2rem;
     color: #ffffff;
     font-weight: 600;
     border-radius: 2rem;
     border: none;
+    margin: 1rem 0rem!important;
 }
 
 .btn-contact:hover {
@@ -378,6 +385,9 @@ body{
     .nav-link{
       background: #eee;
     }
+    .title{
+      padding: 0!important;
+    }
     p{
       font-size: 1rem;
     }
@@ -390,6 +400,9 @@ body{
 
     #pricing .pricing-card:nth-child(1) {
         margin-top: -2rem;
+    }
+    .cta-get{
+      margin: 1.5rem 0rem!important;
     }
 
 }
