@@ -106,7 +106,7 @@ body{
 }
 .cover {
 	max-width: 100%;
-	z-index: 1000;
+	/*z-index: 1000;*/
 	align-self: flex-end;
 }
 @keyframes drop {
@@ -317,7 +317,7 @@ body{
   align-items: center;
   padding-bottom: 1rem;
 }
-.contact {
+#contact {
     background-color: #f0f1f3;
     padding-bottom: 5rem;
     padding-top: 8rem;
