@@ -80,15 +80,15 @@ body{
 	padding: 0px!important;
 }
 .cta-get {
-	background: #42445A;
+	background: #fff;
 	width: 120px;
 	height: 40px;
 	cursor: pointer;
-	font-size: 14px;
+	font-size: 1rem;
 	border: none;
-	color: #fff;
+	color: #42445A;
 	margin: 30px 0px 0px 30px;
-	border-radius: 10px;
+	border-radius: 2rem;
 }
 .logo{
   width: 40px;
@@ -403,6 +403,11 @@ body{
     }
     .cta-get{
       margin: 1.5rem 0rem!important;
+}
+    b{
+      background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
     }
 
 }
