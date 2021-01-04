@@ -152,22 +152,23 @@ body{
     content: '';
     position: absolute;
     border-bottom: 2px solid rgba(0,172,217, 0.62);
-    width: 5%;
-    top: 65px;
+    width: 10%;
+    top: 75px;
     left: 16px;
 }
 
 .section-title:hover::after {
-    width: 40%;
+    width: 50%;
     transition: all 0.7s ease-out;
     -webkit-transition: all 0.7s ease-out;
     -moz-transition: all 0.7s ease-out;
     -o-transition: all 0.7s ease-out;
 }
 .icon{
-  width: 40px;
-  height: 40px;
-  padding-bottom: 10px;
+  margin-bottom: 1rem;
+  color: rgba(252, 74, 26, 0.9);
+  padding: 1rem;
+  border-radius: 50%;
 }
 #features {
     background-color: #fafafa;
@@ -405,7 +406,7 @@ body{
       margin: 1.5rem 0rem!important;
 }
     b{
-      background: linear-gradient(to right, #494964, #6f6f89);
+      background: linear-gradient(to left, #494964, #6f6f89);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     }
